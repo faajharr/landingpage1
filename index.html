@@ -24,7 +24,11 @@
     background-size: cover;
     min-height: 1000px;
   }
-  
+  .section{
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+  }
+
   @media screen and (max-width: 650px){
     header{
       min-height: 500px
@@ -75,20 +79,20 @@
 
   <div class="row">
     <div class=" col s12 l6 push-l7">
-      <img src="img/leather.jpg" class="responsive-img materialboxed">
+      <img src="img/jeans.jpg" class="responsive-img materialboxed">
     </div>
     <div class=" col s12 l6 pull-l5">
-      <h2 class="black-text"> LEATHER</h2>
+      <h2 class="black-text"> LEVI'S</h2>
       <p>lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
     </div>
   </div>
 
   <div class="row">
     <div class=" col s12 l6">
-      <img src="img/leather.jpg" class="responsive-img materialboxed">
+      <img src="img/watch.jpg" class="responsive-img materialboxed">
     </div>
     <div class=" col s12 l6">
-      <h2 class="black-text"> LEATHER</h2>
+      <h2 class="black-text"> WATCH</h2>
       <p>lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
     </div>
   </div>
@@ -96,6 +100,11 @@
 
 
   <!--parallax 1st-->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/p1.jpg" class="responsive-img">
+    </div>
+  </div>
 
   <!--tabs-->
 
@@ -116,6 +125,7 @@
       $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
+        $('.parallax').parallax();
 
       })
     </script>
