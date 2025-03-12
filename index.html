@@ -28,6 +28,13 @@
     padding-bottom: 4vw;
     padding-top: 4vw;
   }
+  .tabs .indicator{
+    background-color: black;
+  }
+
+  .tabs .tab .a:hover, .tabs .tab a:focus.active{
+    background-color: transparent;
+  }
 
   @media screen and (max-width: 650px){
     header{
@@ -97,20 +104,52 @@
     </div>
   </div>
 </section>
-
-
   <!--parallax 1st-->
   <div class="parallax-container">
     <div class="parallax">
       <img src="img/p1.jpg" class="responsive-img">
     </div>
   </div>
-
   <!--tabs-->
+  <section class="container section">
+    <div class="row">
+      <div class="col 12 l5">
+        <h4 class="black-text"> New Trend Info....</h4>
+      <p>lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
+      <p>lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
+      </div>
 
+      <div class="col s12 l6 offset-11">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#dg" class="black-text">Desain Details</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#fd" class="black-text">Fhasion Details</a>
+          </li>
+        </ul>
+        <div class="col s12" id="dg">
+          <p class="flow-text black-text">New Design</p>
+            <p>lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
+      <p>lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col s12" id="fd">
+          <p class="flow-text black-text">New Fhasion</p>
+            <p>lorem ipsum dolar sit amet consectetur adipisicing elit.lorem ipsum dolar sit amet consectetur adipisicing elit.lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
+      <p>lorem ipsum dolar sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--parallax 2nd-->
-
+   <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/p2.jpg" class="responsive-img">
+    </div>
+  </div>
   <!--contact-->
+
+  
 
   <!--page footer-->
 
@@ -126,6 +165,7 @@
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
+        $('.tabs').tabs();
 
       })
     </script>
